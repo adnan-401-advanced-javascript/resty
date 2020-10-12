@@ -1,7 +1,6 @@
-import JSONPretty from 'react-json-prettify';
-
 import React, { Component } from "react";
 
+import Results from "./Results";
 
 import '../styles/form.scss';
 
@@ -54,7 +53,7 @@ render() {
         <br/>
         <input placeholder="http://" onChange={this.onChangeUrl} />
         <br/>
-        <input type="radio" value="GET" name="method" onChange={this.onChangeMethod} />
+        <input checked type="radio" value="GET" name="method" onChange={this.onChangeMethod} />
         <label htmlFor="GET">GET</label>
         <input type="radio" value="POST" name="method" onChange={this.onChangeMethod} />
         <label htmlFor="POST">POST</label>
@@ -67,9 +66,10 @@ render() {
       </form>
       <div>
         <span>{this.state.goMethod} &nbsp; {this.state.goUrl} </span>
-        <JSONPretty json={this.state.responseJson} />
       </div>
-
+      <div style={{ float: "left" }}>
+      <Results json={this.state.responseJson} />
+      </div>
     </div>
   );
 }
