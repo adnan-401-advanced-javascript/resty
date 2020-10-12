@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/adnan-401-advanced-javascript/resty/static/css/main.473ffa78.chunk.css",
+    "main.js": "/adnan-401-advanced-javascript/resty/static/js/main.72645c08.chunk.js",
+    "main.js.map": "/adnan-401-advanced-javascript/resty/static/js/main.72645c08.chunk.js.map",
+    "runtime-main.js": "/adnan-401-advanced-javascript/resty/static/js/runtime-main.5c044e66.js",
+    "runtime-main.js.map": "/adnan-401-advanced-javascript/resty/static/js/runtime-main.5c044e66.js.map",
+    "static/js/2.ca01434d.chunk.js": "/adnan-401-advanced-javascript/resty/static/js/2.ca01434d.chunk.js",
+    "static/js/2.ca01434d.chunk.js.map": "/adnan-401-advanced-javascript/resty/static/js/2.ca01434d.chunk.js.map",
+    "index.html": "/adnan-401-advanced-javascript/resty/index.html",
+    "precache-manifest.fed132845de9f74b45d3e94ce5ae0490.js": "/adnan-401-advanced-javascript/resty/precache-manifest.fed132845de9f74b45d3e94ce5ae0490.js",
+    "service-worker.js": "/adnan-401-advanced-javascript/resty/service-worker.js",
+    "static/css/main.473ffa78.chunk.css.map": "/adnan-401-advanced-javascript/resty/static/css/main.473ffa78.chunk.css.map",
+    "static/js/2.ca01434d.chunk.js.LICENSE.txt": "/adnan-401-advanced-javascript/resty/static/js/2.ca01434d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5c044e66.js",
+    "static/js/2.ca01434d.chunk.js",
+    "static/css/main.473ffa78.chunk.css",
+    "static/js/main.72645c08.chunk.js"
+  ]
+}
