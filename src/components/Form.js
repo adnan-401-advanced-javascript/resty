@@ -1,4 +1,7 @@
+import JSONPretty from 'react-json-prettify';
+
 import React, { Component } from "react";
+
 
 import '../styles/form.scss';
 
@@ -9,8 +12,27 @@ export default class Form extends Component {
     method: '',
     url: '',
     goMethod: "",
-    goUrl: ""
+    goUrl: "",
+    responseJson: {},
   }
+}
+
+fetchData = () => {
+  console.log("fetch", this.state.method, this.state.url);
+  fetch(this.state.url,{
+    method: this.state.method || "get",
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+   .then(async (res) => {
+    const obj = {};
+    for (let [key, value] of res.headers.entries()) {
+      obj[key] = value;
+    }
+     const resJson = await res.json();
+     this.setState({ responseJson: { Headers: obj, Response: resJson }});
+   })
 }
 
 onChangeMethod = e => this.setState({ method: e.target.value })
@@ -20,6 +42,7 @@ printUrlAndMethod = e => {
   e.preventDefault();
   this.setState({ goMethod: this.state.method });
   this.setState({ goUrl: this.state.url });
+  this.fetchData();
 };
 
 render() {
@@ -44,6 +67,7 @@ render() {
       </form>
       <div>
         <span>{this.state.goMethod} &nbsp; {this.state.goUrl} </span>
+        <JSONPretty json={this.state.responseJson} />
       </div>
 
     </div>
