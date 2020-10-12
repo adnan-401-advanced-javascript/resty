@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9bee85446b09d54c5c9a954848692a50",
+    "revision": "a8056db6903fc80fbdd6d2d9d17c092b",
     "url": "/adnan-401-advanced-javascript/resty/index.html"
   },
   {
-    "revision": "b4e52ecbc806541496e9",
-    "url": "/adnan-401-advanced-javascript/resty/static/css/main.473ffa78.chunk.css"
+    "revision": "1d0a90214650fbbd7a6c",
+    "url": "/adnan-401-advanced-javascript/resty/static/css/main.4fd14b69.chunk.css"
   },
   {
     "revision": "f153b639355e899fd6b3",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/adnan-401-advanced-javascript/resty/static/js/2.ca01434d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b4e52ecbc806541496e9",
-    "url": "/adnan-401-advanced-javascript/resty/static/js/main.72645c08.chunk.js"
+    "revision": "1d0a90214650fbbd7a6c",
+    "url": "/adnan-401-advanced-javascript/resty/static/js/main.a23709f6.chunk.js"
   },
   {
     "revision": "3a8f3db10cf4ed008c71",
