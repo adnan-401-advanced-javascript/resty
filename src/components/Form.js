@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import Results from "./Results";
 import History from "./History";
-  
+
 import '../styles/form.scss';
 
 export default class Form extends Component {
@@ -22,6 +22,10 @@ export default class Form extends Component {
   this.selectItem = this.selectItem.bind(this);
 }
 
+componentWillMount(){
+  this.setState({history: JSON.parse(localStorage.getItem("history")) || []});
+}
+
 fetchData = () => {
   console.log("fetch", this.state.method, this.state.url);
   this.setState({ isLoading: true });
@@ -39,7 +43,7 @@ fetchData = () => {
     }
      const resJson = await res.json();
      this.setState({ isLoading: false, responseJson: { Headers: obj, Response: resJson }, history: [...this.state.history, { method:this.state.method, url: this.state.url, reqBody: this.state.reqBody }]});
-     localStorage.setItem("history", this.state.history);
+     localStorage.setItem("history", JSON.stringify(this.state.history));
    })
 }
 
