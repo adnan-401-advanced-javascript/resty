@@ -1,7 +1,7 @@
 {
   "name": "lab26",
   "version": "0.1.0",
-  "homepage": "https://adnan-401-advanced-javascript.github.io/resty",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
