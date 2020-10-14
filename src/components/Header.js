@@ -5,7 +5,7 @@ import '../styles/header.scss';
 export default class Header extends Component {
   render(){
     return (
-      <header className="header">
+      <header data-testid="header" className="header">
          <h1>RESTy</h1>
       </header>
     )

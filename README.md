@@ -17,4 +17,4 @@ npm start
 npm build
 ```
 # UML
-<img src="./assets/uml.png" />
+<img src="./assets/lab28.png" />

@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <main>
+      <main data-testid="main">
       <Form />
       </main>
       <Footer />
