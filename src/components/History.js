@@ -1,6 +1,13 @@
 import React from 'react';
 
-function History(props) {
+class History extends React.Component {
+
+  componentDidMount(){
+    if(this.props.selectedItem) this.props.selectItem(null);
+  }
+
+  render(){
+  const { props } = this;
   const items = props.items || [];
 
   return (
@@ -16,13 +23,14 @@ function History(props) {
               <span className="url-span">
                 {item.url}
               </span>
-              <input type="button" onClick={props.selectItem.bind(this, i)} value="click" />
+              <input type="button" onClick={() => props.selectItem(i)} value="Re-Run" />
             </li>
           )
         }
       </ul>
     </aside>
   )
+}
 }
 
 
