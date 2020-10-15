@@ -31,7 +31,7 @@ render() {
     return (
       <main data-testid="main">
       <Switch>
-        <Route exact path="/">
+        <Route exact path={["/", "resty"]}>
           <Form selectedItem={this.state.selectedItem} />
         </Route>
         <Route exact path="/history">
